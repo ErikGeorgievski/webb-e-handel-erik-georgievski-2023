@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(43,48,67);
+    background: linear-gradient(90deg, rgba(43,48,67,0.33665966386554624) 0%, rgba(0,0,0,1) 0%, rgba(76,94,126,1) 48%, rgba(0,0,0,1) 100%);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /*här är background color med linear-gardient*/
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content:center;
+    background-color: #191919b0;
+    position: fixed;
+    top: 100px;
+    z-index:1;
+    transform: translateY(-100px);  
+    /*header är första elementet och är 100px 
+    från toppen men har andvänt translate för 
+    att få snyggare layout*/ 
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding-top: 2vh;   
+}
+
+li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 500;
+    font-size: 3vh;
+    position: relative;
+    color: #a0a0a0;
+    letter-spacing: 0.5px;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    background-color:#ea0e0e ;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+/*här är lite hover till nav*/
+
+a:hover::after{
+    width: 100%;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+.container{
+    margin: 20px;   
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+.row1, .row2{
+ margin-bottom: 7vh;
+}
+
+.card-01{
+    position: relative;
+    flex: 1;
+    max-width: 560px;
+    height: 70vh;
+    margin: 10px;
+    margin-top: 20vh;
+    font-family: 'Labrada', serif;  
+} 
+
+.card-02{
+    background: #50a8ff09;
+    position: relative;
+    flex: 1;
+    width: 300px; 
+    height: 460px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5vh;
+    margin-top: 7vh;
+}
+
+.card-03{
+    position: relative;
+    flex: 1;
+    max-width: 940px;
+    height: 100px;
+    margin: 10px; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media(max-width:800px){
+    .card-01{
+        flex: 100%;
+        max-width: 700px;
+    }
+    .card-02{                    
+        flex: 100%;
+        max-width: 700px;
+    }
+    .card-03{
+        flex: 100%;
+        max-width: 700px;
+    }
+}
+
+.text1-1{
+    color: antiquewhite;
+    font-size: 10vh;
+    margin-top: 10vh;
+   /* margin-left: 4vh;*/
+}
+
+.webb{
+    color: #ea0e0e;
+}
+
+.text1-2{
+    color: antiquewhite;
+    font-size: 5vh;
+    margin-top: 4vh;
+   /* margin-left: 3vh;*/
+}
+
+.text1-3{
+    color:#a0a0a0;
+    font-size: 8vh;
+    margin-top: 4vh;
+    -webkit-text-stroke-width: 0.1vh;
+  -webkit-text-stroke-color: #fff;
+}
+
+.img1{
+    height: 42vh;
+    margin-left: 5vh;
+    margin-top: 15vh;
+}
+
+.text2-1, .text2-2, .text3-1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+}
+
+
+.text2-1-1, .text2-3, .text3-2{
+    margin-left: 2vh;
+}
+
+.card-02>ul{
+    margin-left: 3vh;
+}
+
+.card-02>ul>li{
+    margin-top: 3vh;
+}
+
+
+/*fa symboler och googlefonts är länkad till head */
+.fa-facebook{
+   
+    font-size: 3vh;
+    width: 4vh;
+    height: 4vh;
+    padding-top: 0.7vh;
+    margin: 1vh;
+    text-align: center;
+    text-decoration: none;
+    background: #3B5998;
+    color: white;
+    border-radius: 20%;   
+
+    
+}
+
+.fa-instagram{
+   
+    font-size: 3vh;
+    width: 4vh;
+    height: 4vh;
+    padding-top: 0.7vh;
+    margin:1vh;
+    text-align: center;
+    text-decoration: none;
+    background: #e02323;
+    color: white;
+    border-radius:20%;
+}
+
+.fa-linkedin{
+   
+    font-size: 3vh;
+    width: 4vh;
+    height: 4vh;
+    padding-top: 0.7vh;
+    margin:1vh;
+    text-align: center;
+    text-decoration: none;
+    background: #3B5998;
+    color: white;
+    border-radius: 20%;
+   
+
+}
+
+.footer{
+    justify-content: space-around;
+}
+
+.kontakt{
+    color: antiquewhite;
+    font-size: 3vh;
+}
+
+.copy{
+    color: antiquewhite;
+    font-size: large;
+    display: block;
+    margin-top: 2vh;   
+}
+
+
+      /*INSPIRATION SIDA*/
+
+
+
+.card-04{
+    position: relative;
+    flex: 1;
+    max-width: 940px;
+    height: 100px;
+    margin: 10px; 
+    color: antiquewhite;
+    /*display: flex;*/
+    justify-content: center;
+}
+
+.card-05, .card-06, .card-07, .card-08{
+    background:#50a8ff09 ;
+    position: relative;
+    flex: 1;
+    max-width: 360px; /* max-width:560*/
+    height: 70vh;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 10vh;
+    color: antiquewhite;
+    font-family: 'Labrada', serif;  
+} 
+
+@media(max-width:800px){
+    .card-05{
+        flex: 100%;
+        max-width: 700px;
+
+    }
+    .card-06{                    
+        flex: 100%;
+        max-width: 700px;
+    }
+    .card-07{
+        flex: 100%;
+        max-width: 700px;
+    }  
+}
+
+
+.rubrik2-1{
+    display:flex;
+    justify-content: center;
+}
+
+.citat1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    font-size: 20px;
+}
+
+.text05-01{
+    letter-spacing: 3px;
+    display: flex;
+    justify-content:center;
+    margin-top: 3vh;
+
+}
+
+.text05-02{
+    margin-left: 2vh;
+    margin-top: 3vh;
+
+}
+.link01{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornflowerblue;
+}
+
+
+
+/* Contact sidan*/
+.container{
+    margin-top: 15vh;
+}
+
+
+.forms{
+    padding-left: 10vh;
+    margin-top: 3vh;
+    font-size: 20px;
+   
+}
+
+.forms1{
+    margin-top: 10vh;
+}
+
+/*
+#name{
+    margin-left: 7vh;
+}
+#lastname{
+    margin-left: 1.7vh;
+}
+#age{
+    margin-left: 7.8vh;
+}
+#email{
+    margin-left: 7.1vh;
+}
+#password{
+    margin-left: 3.5vh;
+}*/
+#button1{
+    color: #ffffff;
+    background-color: cadetblue;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 15px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    margin-top: 2vh;
+    margin-left: 10%;
+    position: relative;
+}
+
